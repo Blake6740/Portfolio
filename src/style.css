@@ -1,5 +1,6 @@
 body {
 	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0px;
 }
 
 section {
@@ -8,20 +9,24 @@ section {
 }
 
 .hero {
-	background-color: rebeccapurple;
+	background-color: #1d0136;
 	height: 100vh;
 	color: white;
 	font-size: 40px;
 }
 
 footer {
-	height: 500px;
 	background-color: black;
+	padding-top: 15px;
+	padding-bottom: 100px;
+	color: white;
+	text-align:center;
 }
 
 nav {
-	display:flex;
-	justify-content:space-between;
+	display: flex;
+	justify-content: space-between;
+	background-color: #28014a;
 }
 
 ul {
@@ -30,6 +35,42 @@ ul {
 	width:650px;
 	justify-content:space-around;
 	font-size:35px;
+}
+
+ul.show{
+	display:block;
+}
+
+.hamburger{
+	display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+	.hamburger {
+		display: block;
+		font-size: 30px;
+		border: 0;
+		background-color: transparent;
+		color: white;
+		margin: 30px;
+		align-self: flex-end;
+	}
+
+	ul {
+		display: none;
+		margin: 0px;
+		background-color: #28014a;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column-reverse;
+		background-color: #28014a;
+	}
+
+	.logo{
+		display: none;
+	}
 }
 
 li {
@@ -45,6 +86,10 @@ h2{
 	font-size: 55px;
 }
 
+h3{
+	font-size: 27px;
+}
+
 p {
 	margin: 0;
 	font-weight: 400;
@@ -52,7 +97,7 @@ p {
 }
 
 .subtext{
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: 300;
 }
 
@@ -72,7 +117,7 @@ p {
 	width: 180px;
 	height: 60px;
 	border-radius: 30px;
-	background-color: coral;
+	background-color: #872391;
 	text-align: center;
 	margin-top: 10px;
 	font-weight: 500;
@@ -90,13 +135,21 @@ p {
 	color: black;
 }
 
-.socials {
-	padding-bottom: 260px;
+.button-link{
+	text-decoration: none;
+	color:white;
 }
 
-.logo {
-	height: 150px;
-	margin: 10px;
+.button-link:visited {
+	color: white;
+}
+
+.button-link:hover{
+	color:black
+}
+
+.socials {
+	padding-bottom: 260px;
 }
 
 .icon {
@@ -138,8 +191,38 @@ p {
 	justify-content: space-around;
 }
 
+@media only screen and (max-width: 1000px) {
+	.project-container{
+		display:flex;
+		flex-wrap: wrap;
+	}
+}
+
 .project-image{ /*at 1:05:20 in the video*/
 	margin-top: 30px;
 	width: 300px;
 	border-radius: 125px;
+}
+
+hr{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.project-link {
+	text-decoration: none;
+	color: black
+}
+
+.link{
+	text-decoration: none;
+	color: white;
+}
+
+.link:visited{
+	color: white;
+}
+
+.link:hover{
+	color: black;
 }

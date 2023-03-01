@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6f31795d68.js" crossorigin="anonymous"></script>
     <meta charset="utf-8" />
     <title>Blake's Portfolio</title>
 </head>
@@ -13,18 +14,21 @@
 
     <section class="hero">
         <nav>
-            <img class="logo" src="src/imgs/logo-placeholder-image.png" alt="logo" />
-            <ul>
-                <li>About Me</li>
-                <li>Projects</li>
-                <li>Contact</li>
+            <i class="fa-solid fa-dragon fa-2x" style="position:relative; left:20px; top:10px"></i>
+            <ul id="nav-list">
+                <li><a class="link" href="#about-me">About Me</a></li>
+                <li><a class="link" href="#projects">Projects</a></li>
+                <li><a class="link" href="contact-me">Contact</a></li>
             </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
         <div class="hero-area">
             <div class="hero-text">
                 <h1>Blake Sanders</h1>
                 <p>Title</p>
-                <div class="button">About Me</div>
+                <div class="button"><a class="button-link" href="#about-me">About Me</a></div>
             </div>
             <div class="socials">
                 <div>
@@ -34,11 +38,11 @@
                     <a href="https://www.linkedin.com/in/blake-sanders-b24657261/" class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="white" width="50" height="50" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" /></svg></a>
                 </div>
             </div>
-        </div> 
+        </div>
     </section>
     <section class="sub-section">
         <div class="info">
-            <h2> About Me</h2>
+            <h2 id="about-me"> About Me</h2>
             <p> Hello my name is Blake Sanders. I am devleoping my skills as a software developer, with a passion for gaming.</p>
         </div>
         <div class="headshot-container">
@@ -46,40 +50,43 @@
         </div>
     </section>
     <section class="subsection-alt">
-        <h2>Projects</h2>
+        <h2 id="projects">Projects</h2>
         <div class="project-container">
             <div class="project-card">
                 <!--HTML Whack-a-mole can we embedd this in here?-->
-                <img class="project-image" src="" alt="Project one image" />
-                <h3>Project One</h3>
-                <p class="subtext">This is my project and some text about it.</p>
-                <hr />
-                <p class="subtext">View here</p>
+            <img class="project-image" src="" alt="Project one image" />
+            <h3>Project One</h3>
+            <p class="subtext">This is my project and some text about it.</p>
+            <hr />
+            <p class="subtext"><a class="project-link" href="https://www.google.com" target="_blank">View here</a></p>
             </div>
-            <div class="project-card"> 
-                <img class="project-image" src="" alt="Project two image" /> 
+            <div class="project-card">
+                <img class="project-image" src="" alt="Project two image" />
                 <h3>Project Two</h3>
                 <p class="subtext">This is my project and some text about it.</p>
                 <hr />
-                <p class="subtext">View here</p>
+                <p class="subtext"><a class="project-link" href="https://www.google.com" target="_blank">View here</a></p>
             </div>
             <div class="project-card">
                 <img class="project-image" src="" alt="Project three image" />
                 <h3>Project Three</h3>
                 <p class="subtext">This is my project and some text about it.</p>
                 <hr />
-                <p class="subtext">View here</p>
+                <p class="subtext"><a class="project-link" href="https://www.google.com" target="_blank">View here</a></p>
             </div>
             <div class="project-card">
                 <img class="project-image" src="" alt="Project four image" />
                 <h3>Project Four</h3>
                 <p class="subtext">This is my project and some text about it.</p>
                 <hr />
-                <p class="subtext">View here</p>
+                <p class="subtext"><a class="project-link" href="https://www.google.com" target="_blank">View here</a></p>
             </div>
-        </div>
-    </section>
-    <footer></footer>
+            </div>
+</section>
+    <footer id="contact-me">
+        <h2>Contact Me</h2>
+        <p>Email here</p>
+    </footer>
 
     <script src="src/app.js"></script>
 
