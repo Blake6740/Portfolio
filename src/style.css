@@ -47,13 +47,14 @@ ul.show{
 
 @media only screen and (max-width: 1000px) {
 	.hamburger {
-		display: block;
+		display: flex;
 		font-size: 30px;
 		border: 0;
 		background-color: transparent;
 		color: white;
 		margin: 30px;
 		align-self: flex-end;
+		flex-direction: unset;
 	}
 
 	ul {
@@ -64,13 +65,16 @@ ul.show{
 
 	nav {
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		background-color: #28014a;
 	}
 
-	.logo{
-		display: none;
+	.dragon{
+		display:flex;
+		padding-bottom: 20px;
+		justify-content:space-between;
 	}
+
 }
 
 li {

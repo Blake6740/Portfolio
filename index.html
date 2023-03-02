@@ -14,15 +14,18 @@
 
     <section class="hero">
         <nav>
-            <i class="fa-solid fa-dragon fa-2x" style="position:relative; left:20px; top:10px"></i>
+            <div class="dragon">
+                <i class="fa-solid fa-dragon fa-2x" style="position:relative; left:20px; top:10px"></i>                
+            <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+            </button>   
+            </div>
             <ul id="nav-list">
                 <li><a class="link" href="#about-me">About Me</a></li>
                 <li><a class="link" href="#projects">Projects</a></li>
                 <li><a class="link" href="contact-me">Contact</a></li>
             </ul>
-            <button class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </button>
+            
         </nav>
         <div class="hero-area">
             <div class="hero-text">
@@ -46,7 +49,7 @@
             <p> Hello my name is Blake Sanders. I am devleoping my skills as a software developer, with a passion for gaming.</p>
         </div>
         <div class="headshot-container">
-            <img class="headshot" src="src/imgs/headshot-placeholder.png" atl="headshot of Blake" />
+            <img class="headshot" src="src/imgs/headshot-placeholder.png" alt="headshot of Blake" />
         </div>
     </section>
     <section class="subsection-alt">
@@ -54,11 +57,11 @@
         <div class="project-container">
             <div class="project-card">
                 <!--HTML Whack-a-mole can we embedd this in here?-->
-            <img class="project-image" src="" alt="Project one image" />
-            <h3>Project One</h3>
-            <p class="subtext">This is my project and some text about it.</p>
-            <hr />
-            <p class="subtext"><a class="project-link" href="https://www.google.com" target="_blank">View here</a></p>
+                <img class="project-image" src="" alt="Project one image" />
+                <h3>Project One</h3>
+                <p class="subtext">This is my project and some text about it.</p>
+                <hr />
+                <p class="subtext"><a class="project-link" href="https://www.google.com" target="_blank">View here</a></p>
             </div>
             <div class="project-card">
                 <img class="project-image" src="" alt="Project two image" />
@@ -81,8 +84,8 @@
                 <hr />
                 <p class="subtext"><a class="project-link" href="https://www.google.com" target="_blank">View here</a></p>
             </div>
-            </div>
-</section>
+        </div>
+    </section>
     <footer id="contact-me">
         <h2>Contact Me</h2>
         <p>Email here</p>
