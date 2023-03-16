@@ -185,7 +185,7 @@ p {
 	margin-top: 10px;
 	font-weight: 500;
 	font-size: 40px;
-	padding-top: 5px;
+	padding: 5px;
 }
 
 .button:hover {
@@ -291,3 +291,17 @@ hr{
 .link:hover{
 	color: black;
 }
+
+/*@keyframes headshotspin {
+	0% {
+		transform: rotate(0turn);
+	}
+
+	50% {
+		transform: rotate(0.5turn);
+	}
+
+	100% {
+		transform: rotate(1turn);
+	}
+}*/
