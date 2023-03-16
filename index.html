@@ -15,23 +15,26 @@
     <section class="hero">
         <nav>
             <div class="dragon">
-                <i class="fa-solid fa-dragon fa-2x" style="position:relative; left:20px; top:10px"></i>                
-            <button class="hamburger" id="hamburger">
+                <i class="fa-solid fa-dragon fa-2x" style="position:relative; left:20px; top:10px"></i>
+                <button class="hamburger" id="hamburger">
                     <i class="fas fa-bars"></i>
-            </button>   
+                </button>
             </div>
             <ul id="nav-list">
+                <li><div class="switch">
+                        <div class="flicker"></div>
+                    </div></li>
                 <li><a class="link" href="#about-me">About Me</a></li>
                 <li><a class="link" href="#projects">Projects</a></li>
                 <li><a class="link" href="contact-me">Contact</a></li>
             </ul>
-            
+
         </nav>
         <div class="hero-area">
             <div class="hero-text">
                 <h1>Blake Sanders</h1>
                 <p>Title</p>
-                <div class="button"><a class="button-link" href="#about-me">About Me</a></div>
+                <div class="button"><a class="button-link" href="#projects">Projects</a></div>
             </div>
             <div class="socials">
                 <div>
@@ -89,6 +92,14 @@
     <footer id="contact-me">
         <h2>Contact Me</h2>
         <p>Email here</p>
+
+        <form action="https://formsubmit.co/blake.sanders.fmtc@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New email" />
+            <input type="email" name="email" placeholder="Email Address" required />
+            <input type="hidden" name="_next" value="src/Thankyou.html" />
+            <input type="text" name="name" placeholder="write your message here" required />
+            <button type="submit">Send</button>
+        </form>
     </footer>
 
     <script src="src/app.js"></script>
