@@ -138,6 +138,10 @@ ul.show{
 		position: relative;
 	}
 
+	.dark .hero-area {
+		background: linear-gradient(180deg, rgba(87, 9, 115, 1) 40%, rgba(55, 9, 75, 1) 60%, rgba(0, 0, 0, 1) 90%);
+	}
+
 }
 
 li {
